@@ -26,7 +26,7 @@ This project is a GitHub Repository Update Notifier that uses FastAPI to monitor
 ## Setup and Installation
 
 1. **Clone the repository:**
-git clone https://github.com/your-username/your-repository.git
+```git clone https://github.com/your-username/your-repository.git```
 ```cd your-repository```
 
 2. **Install dependencies:**
@@ -47,21 +47,21 @@ Send a POST request to `/subscribe/` with the following JSON payload:
 
 ```json
 {
-"repo": "username/repository",
-"chat_id": "your_telegram_chat_id"
+    "repo": "username/repository",
+    "chat_id": "your_telegram_chat_id"
 }
 ```
 
 This will subscribe you to updates for the specified repository, and you'll receive notifications via Telegram when new commits are pushed to the main branch.
 
-Checking Subscriptions
+**Checking Subscriptions**
 The current subscriptions are stored in-memory and can be viewed by inspecting the server logs or by adding an endpoint to list subscriptions.
 
 Contributing
 Contributions are welcome! Please fork the repository and submit pull requests with any enhancements.
 
-License
-MIT License
+License 
+*MIT License*
 
 Contact
 For any further queries, please reach out via GitHub or Telegram.
